@@ -1,20 +1,23 @@
 # Typescript and Nodejs starter project
 
-
+## before starting
+``
+$ npm install
+``
 
 ## Starting
 ```
-npm start
+$ npm start
 ```
 
 ## Develop
 ```
-npm run dev
+$ npm run dev
 ```
 
 ## Build docker image
 ```
-npm run docker-build
+$ npm run docker-build
 ```
 ## Push docker image
 Environmental variables must be set
@@ -26,7 +29,7 @@ $ACR_PASSWORD="password"
 
 
 ```
-npm run docker-push
+$ npm run docker-push
 ```
 
 # Links
