@@ -7,6 +7,7 @@ class Examplefunctions{
         return first + second
     }
 
+    //still need to deal with cases like this, where the output is not whats expected
     typeAssertion(first:string, second:string):number{
         let first2:number = <number> <any> first;
         let second2: number = <number> <any> second;
@@ -15,5 +16,6 @@ class Examplefunctions{
     }
 
 
-
 }
+
+export default new Examplefunctions();
