@@ -1,5 +1,11 @@
 # Typescript and Nodejs starter project
 
+## Dependancies
+### OSX
+``
+$ brew install npm
+``
+
 ## before starting
 ``
 $ npm install

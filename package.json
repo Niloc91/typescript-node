@@ -8,10 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsc && node build/index.js",
     "dev": "nodemon",
-    "build" : "tsc",
+    "build": "tsc",
     "docker-build": "docker build -t local/$npm_package_docker_tag:latest .",
     "docker-push": "docker login $ACR_REGISTRY -u $ACR_USER -p $ACR_PASSWORD && docker tag local/$npm_package_docker_tag:latest $ACR_REGISTRY/$npm_package_docker_tag:$(date -u +'%Y-%m-%dT%H.%M.%SZ') && docker push $ACR_REGISTRY/$npm_package_docker_tag:$(date -u +'%Y-%m-%dT%H.%M.%SZ')"
-
   },
   "keywords": [],
   "author": "",

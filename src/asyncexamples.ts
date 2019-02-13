@@ -11,8 +11,10 @@ class Asyncexamples{
 
         }
 
-        console.log(sum);
+        //console.log(sum);
+
         return sum
+
     }
 
 
