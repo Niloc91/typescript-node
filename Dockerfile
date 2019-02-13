@@ -1,1 +1,3 @@
 FROM node:latest
+
+COPY . .
