@@ -1,9 +1,11 @@
+const Monitor = require('./Monitor');
 
 //Export class with static functions
 export default class Examplefunctions{
 
     //Simple arithmetic
     static adder(first:number, second:number) : number {
+        Monitor.numOfRequests.inc(1);
         return first + second
     }
 
@@ -11,6 +13,8 @@ export default class Examplefunctions{
     static typeAssertion(first:string, second:string):number{
         let first2:number = <number> <any> first;
         let second2: number = <number> <any> second;
+
+        Monitor.numberOfRequests.inc(1);
 
         return first2 + second2
     }

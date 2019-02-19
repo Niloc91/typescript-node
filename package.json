@@ -10,7 +10,7 @@
     "dev": "nodemon",
     "build": "tsc",
     "docker-build": "docker build -t local/$npm_package_docker_tag:$(git rev-parse HEAD | head -c8) .",
-    "docker-push": "docker login $ACR_REGISTRY -u $ACR_USER -p $ACR_PASSWORD &&   docker tag local/$npm_package_docker_tag:$(git rev-parse HEAD | head -c8) $ACR_REGISTRY/$npm_package_docker_tag:$(git rev-parse HEAD | head -c8)_$(date -u +'%Y-%m-%dT%H.%M.%SZ') && docker push $ACR_REGISTRY/$npm_package_docker_tag:$(git rev-parse HEAD | head -c8)_$(date -u +'%Y-%m-%dT%H.%M.%SZ')"
+    "docker-push": "docker login $ACR_REGISTRY -u $ACR_USER -p $ACR_PASSWORD && docker tag local/$npm_package_docker_tag:$(git rev-parse HEAD | head -c8) $ACR_REGISTRY/$npm_package_docker_tag:$(git rev-parse HEAD | head -c8)_$(date -u +'%Y-%m-%dT%H.%M.%SZ') && docker push $ACR_REGISTRY/$npm_package_docker_tag:$(git rev-parse HEAD | head -c8)_$(date -u +'%Y-%m-%dT%H.%M.%SZ')"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +26,10 @@
     "@typescript-eslint/eslint-plugin": "^1.1.1",
     "@typescript-eslint/parser": "^1.1.1",
     "express": "^4.16.4",
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.10",
+    "prom-client": "^11.2.1",
+    "prometheus-gc-stats": "^0.6.1",
+    "response-time": "^2.3.2",
+    "winston": "^3.2.1"
   }
 }

@@ -1,3 +1,5 @@
+const Monitor = require('./Monitor');
+
 class Asyncexamples{
 
     async addasync () : Promise<number>{
